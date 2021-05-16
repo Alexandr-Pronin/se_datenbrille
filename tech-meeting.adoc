@@ -1,0 +1,44 @@
+= Tech Meeting 16.05.2020 - 10:00
+
+In diesem Meeting wollen wir ein paar technische Anforderungen und Features besprechen.
+
+== Anwesenheit
+- [x] David
+- [x] Moritz
+- [x] Florian
+
+== Features Talk
+=== Webfrontend Template Edit Auto Speichern visualisieren
+Wenn ein User Templates edited, soll ein Feld angezeigt werden, das ihm klar wird dass seine Aenderungen automatisch gespeichert wurden.
+
+=== Labels
+Templates taggable mit Metadaten wie Fahrzeugtyp, Innenraum / Aussen. Labels sollen durch Nutzer verwaltbar sein, sowohl an Template als auch an Protokoll hängen.
+
+- Label Tabelle erzeugen
+
+. ID,UserID, Name, Beschreibung, Farbe
+
+- Label : Template Mapping Tabelle
+
+. Label-ID : Template-ID
+
+
+=== Infrastruktur Verfügbarkeit
+Webfrontend soll in regelmaesigen kurzen Abstaenden das Backend anfragen, wenn eine Antwort mehrmals fehlschlaegt, wird der Nutzer informiert dass die Infrastruktur gerade nicht verfuegbar ist.
+
+=== Template download / Protkoll Upload auf Listen umbauen
+Beim Upload von Protokollen von der Brille zum Backend, soll eine Liste von Protokollen gesendet werden.
+
+Beim Download von Templates von Backend zur Brille soll eine Liste von Templates kommen.
+
+=== new Protocol Route zu glasses wechseln
+Die new Protocol Route braucht eigentlich nur das die Brille, daher wechsel von web zu glasses api.
+
+=== Brille muss anzeigen, wenn Sie keine Zugangsberechtigung mehr hat.
+Wieder neu registrieren anbieten, lokale Daten löschen anbieten.
+Eventuell nach einer gewissen Zeit eventuell lokale Daten automatisch auslöschen.
+
+=== Tabelle
+Tabellen:
+label(id, label, beschreibung, user_id)
+label_maps_template(id, label_id, template_id)

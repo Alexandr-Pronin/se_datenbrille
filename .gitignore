@@ -1,0 +1,4 @@
+*.vpp.bak*
+*.vpp.lck*
+.DS_Store
+web-backend/doc
