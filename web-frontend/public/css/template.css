@@ -1,0 +1,93 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/bg.svg");
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-background {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+}
+
+.login-container {
+  max-width: 30rem;
+  max-height: 80%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.login {
+  padding-bottom: 2rem;
+}
+
+.dashboard-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.dashboard-sidebar {
+  height: 100%;
+  max-width: 20rem;
+  float: left;
+}
+
+.dashboard-sidebar button {
+  margin-top: 2rem;
+}
+
+.margin-top {
+  margin-top: 2rem;
+}
+
+.padding {
+  padding: 1.5rem;
+}
+
+.protocol-entry-container {
+  padding: 0.5rem;
+  transition: background-color 0.2s !important;
+  -moz-transition: background-color 0.2s !important;
+  margin-bottom: 1rem;
+}
+
+.protocol-entry-container:hover {
+  background-color: #f6f6f6;
+}
+
+.action-button-bottom-right {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.cover-loader {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.cover-loader .loader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 44px; /* Need a specific value to work */
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+}
