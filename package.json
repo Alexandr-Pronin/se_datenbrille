@@ -1,0 +1,8 @@
+{
+  "name": "se_datenbrille",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Alexandr-Pronin/se_datenbrille.git",
+  "author": "Alexander Pronin <aleksandr.pronin@htw-dresden.de>",
+  "license": "MIT"
+}
